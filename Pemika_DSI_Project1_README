@@ -1,0 +1,92 @@
+Project 1: Standardized Test Analysis
+
+## Background
+As an employee of College Board, I am in a team that analyzes that trends and insights from the data we gathered each year to provide to our executive board. Since this is year 2020, we would like to evaluate the past year data as a whole and see if there are any key insights we can use to improve our test. Specifically, I wanted to look at the data by each state and by intended college major to see if there is any correlation between them. For example, are there any correlation between states that have high SAT scores and certain intended college majors.
+
+## Dataset
+* [`sat_2019.csv`](./data/sat_2019.csv): 2019 SAT Scores by State
+* [`sat_2019_by_intended_college_major.csv`](./data/sat_2019_by_intended_college_major.csv): 2019 SAT Scores by Intended College Major
+* [`SAT_dataframe.csv`](./data/SAT_dataframe.csv): Merge File between 2019 SAT Scores by State and 2019 SAT Scores by Intended College Major
+
+
+## Outside Research
+https://mapchart.net/usa.html
+
+## Data Dictionary
+|Feature|Type|Dataset|Description|
+|---|---|---|---|
+|state|object|sat_2019|List of US states, including Hawaii, Alaska, and Virgin island| 
+|participationrate_state|float|sat_2019|Percentage of students who took SAT test in 2019 (by state)|
+|total_state|int|sat_2019|Total SAT score, range between 400 and 1600 (by state)| 
+|verbal_state|int|sat_2019|SAT verbal score, range between 200 and 800 (by state)| 
+|math_state|int|sat_2019|SAT math score, range between 200 and 800 (by state)| 
+|intended_major|object|sat_2019_by_intended_college_major|Intended college major of the students who took SAT test in 2019|
+|participationrate_major|float|sat_2019_by_intended_college_major|Percentage of students who took SAT test in 2019 (by major)|
+|total_major|float|sat_2019_by_intended_college_major|Total SAT score, range between 400 and 1600 (by major)| 
+|verbal_major|float|sat_2019_by_intended_college_major|SAT verbal score, range between 200 and 800 (by major)| 
+|math_major|float|sat_2019_by_intended_college_major|SAT math score, range between 200 and 800 (by major)| 
+
+## Brief Analysis
+
+SAT Scores
+-The top 5 states with highest SAT scores are Minnesota, Wisconsin, South Dakota, North Dakota, and Nebraska.
+-The top 5 states with lowest SAT scores are District of Columbia, Oklahoma, Puerto Rico, West Virginia, and Virgin Islands
+-The top 5 intended college majors with highest SAT scores are Mathematics and Statistics, Physical Science, Social Science, Computer and Information Sciences, Multi/Interdisciplinary Studies.
+-The top 5 intended college majors with lowest SAT scores are Mechanic and repair technolgies, Consturction Trades, Personal and Culinary Services, Precision Production, and Family and Consumer Sciences.These majors might not use SAT scores as a college admission test or SAT might not be an important part of their college applications.
+-The top 5 intended college majors with highest Math scores are Mathematics and Statistics, Physical Science, Computer and Information Sciences, Engineering, and Multi/Interdisciplinary Studies. These college majors are similar to those with high total SAT scores, minus Social Science. These college majors will use math as their main subjects, so the data we gathered make sense as there must be correlation between those who did well in math and their preferred major in college.
+-Surprisingly, the top 5 intended college majors with highest verbal scores are Mathematics and Statistics, Physical Science, Social Science, English Language and Literature, and Liberal Arts and Sciences.So, students who intended to major in Mathematics and Statistics and Physical Science did well in both verbal and math sections. On the other hand, students who intended to major in Social Science must have scored verbal section higher than math section in order to get high overall scores.
+-There are 22 states that students have SAT scores higher than the mean. It shows that the data is not equally distributed. Some of these states may have more resources/more familiarity with SAT than others.
+-When we're looking at the scores by college major, students tend to do better in verbal compared to math as they have higher minimum and higher maximum scores. The median for verbal section is also slightly higher. Similar variability for both sections. There is no outliers for these datas.
+-When we're looking at the scores by state, again, students tend to do better in verbal compared to math as they have higher minimum and higher maximum scores. The median for verbal section is also slightly higher. The spread of math scores by intended major are less compared to verbal and there's one outlier college major, which is those who intended to major in mathematics and statistics.
+-The stacked histogram shows that there are more number of states that do well in math compared to those of verbal.
+-Similarly, the stacked histogram shows that there are more number of intended college majors that do well in math compared to those of verbal.
+
+#Paticipation Rate
+-There are 14 intended college majors that have zero participation rate, meaning these data we gathered from the intended college major aspect might not have much importance compared to those with higher participant rates.On the other hand, we can also look at it as very little people who intended to study in these fields might not need the SAT to get acccepted took the SAT. Further analysis will be needed to come up with conclusion.
+-Health Professions, Business Management, and Engineering have the highest participation rates compared to others. College Board can look into these college majors whether they can adapt the test to make it more related to these field of study. So, the college might place more importance into SAT for students to get accepted into these intended majors.  
+-Virgin Islands, Puerto Rico, North Dakota, Wyoming, and Mississippi are states with the lowest participation rate. College Board can deep dive into schools in these states whether SAT is not recognized or resources are not well-allocated to improve participation rate in the future
+
+#Correlation
+-There is a strong positive correlation in verbal scores and math scores by states. We can conclude that students who do well in one section, tend to do well in another section as well. It makes sense since generally the college would look at the total scores instead of scores per section. Hence, students need to do well as a whole to get accepted.
+-Similar to scores by state. There is a strong positive correlation in verbal scores and math scores by college major. We can conclude that students who do well in one section, tend to do well in another section as well.
+-There is somewhat negative correlation between participation rate for each state and SAT scores. It shows that there are only several states that receive high SAT scores. On the other hand, there are many more states that on average, their scores are low. We can conclude that high participation rate yields lower scores and vice versa.
+-There is no correlation between participation rate for each intended college major and SAT scores.
+-There is no correlation in the SAT scores by state and the scores by college major.  
+
+
+##Conclusions/Recommendations
+
+Scores
+- The top 5 states with highest SAT scores are states in the Midwestern area
+- On the other hand, the top 5 states with lowest SAT scores tend to be those that are not in the main US territory i.e. Puerto Roco, Virgin Islands.  
+-There are 22 states that students have SAT scores higher than the mean. It shows that the data is not equally distributed. It is possible that some of these states may have more resources/more familiarity with SAT than others.
+
+Each section
+- The top 5 intended college majors with the highest total SAT scores are mainly majors that are related to Math i.e Mathematics and Statistics, Physical Science, Social Science, and Computer and Information Science.
+-Students who intended to major in science related fields also received highest scores in verbal.
+- College majors with least scores are those that tend to use less of math and verbal in the fields i.e. Mechanic and repair technology, construction trade, personal and culinary services. One assumption is these majors might not use SAT scores as a college admission test.
+-There are more number of states that do well in math compared to those of verbal.
+-Similarly, the stacked histogram shows that there are more number of intended college majors that do well in math compared to those of verbal.
+-Generally, students tend to do better in verbal compared to math as they have higher upper and lower quartile in scores.
+ The median for verbal section is also slightly higher
+
+Participation Rates
+-There are 14 intended college majors that have zero participation rate
+-Health Professions, Business Management, and Engineering have the highest participation rates compared to others.
+-States with low participation rates are the same states with low SAT scores
+
+Correlation
+The main question that I was looking at is that "are there any correlation between states that have high SAT scores and certain intended college majors?" and the short answer is no. 
+-There is no correlation in the SAT scores by state and the scores by college major.
+-There is a strong positive correlation in verbal scores and math scores. 
+-There is somewhat negative correlation between participation rate for each state and SAT scores. 
+-There is also no correlation between participation rate for each intended college major and SAT scores.
+
+My recommendations are to keep looking for more data on:
+-top college majors that have highest and lowest participation rate 
+-states with low participation rate, specifically those 22 states with lower scores compared to the country mean
+-more data to find correlation between states and intended college major
+
+
+
+
