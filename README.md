@@ -16,10 +16,10 @@ As an employee of College Board, I am in a team that analyzes that trends and in
 
 ### Choose your Data
 
-sat_2017.csv: 2017 SAT Scores by State
-sat_2018.csv: 2018 SAT Scores by State
-sat_2019.csv: 2019 SAT Scores by State
-sat_2019_by_intended_college_major.csv: 2019 SAT Scores by Intended College Major
+-  sat_2017.csv: 2017 SAT Scores by State
+-  sat_2018.csv: 2018 SAT Scores by State
+-  sat_2019.csv: 2019 SAT Scores by State
+-  sat_2019_by_intended_college_major.csv: 2019 SAT Scores by Intended College Major
 
 
 ### Data Dictionary for sat_3years dataset
