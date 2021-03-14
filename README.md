@@ -5,8 +5,8 @@ The SAT and ACT are standardized tests that many colleges and universities in th
 
 The SAT has two sections of the test: Evidence-Based Reading and Writing and Math (source). The ACT has 4 sections: English, Mathematics, Reading, and Science, with an additional optional writing section (source). They have different score ranges, which you can read more about on their websites or additional outside sources (a quick Google search will help you understand the scores for each test):
 
--SAT
--ACT
+-  SAT
+-  ACT
 
 Standardized tests have long been a controversial topic for students, administrators, and legislators. Since the 1940's, an increasing number of colleges have been using scores from sudents' performances on tests like the SAT and the ACT as a measure for college readiness and aptitude (source). Supporters of these tests argue that these scores can be used as an objective measure to determine college admittance. Opponents of these tests claim that these tests are not accurate measures of students potential or ability and serve as an inequitable barrier to entry. Lately, more and more schools are opting to drop the SAT/ACT requirement for their Fall 2021 applications (read more about this here).
 
@@ -62,8 +62,8 @@ When looking into the total scores by intended college major (2019 only), we fin
 
 Recommendations:
 
-Gather more information on the causes of students performance in SAT in District of Columbia and West Virginia. Deep dive into the resources allocation, school district as such to find a way to improve scores of these states.
-Find out the drop in participation rate for District of Columbia. Not only that this state earns low average total score, but it also shows decrease in participation rate over years.
-Gather intended college major data by state in order to find out whether there is any correlation between states and intended college major.
+-  Gather more information on the causes of students performance in SAT in District of Columbia and West Virginia. Deep dive into the resources allocation, school district as such to find a way to improve scores of these states.
+-  Find out the drop in participation rate for District of Columbia. Not only that this state earns low average total score, but it also shows decrease in participation rate over years.
+-  Gather intended college major data by state in order to find out whether there is any correlation between states and intended college major.
 
 
